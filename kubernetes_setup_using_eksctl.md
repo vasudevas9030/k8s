@@ -34,8 +34,15 @@ You can follow same procedure in the official  AWS document [Getting started wit
    EC2   
    VPC    
    CloudFormation
+4.attach instance
+  goto ec2 dashbord
+  goto instances
+  select instance
+  goto actions
+  goto security
+  select roles and attach   
 
-4. Create your cluster and nodes 
+5. Create your cluster and nodes 
    ```sh
    eksctl create cluster --name cluster-name  \
    --region region-name \
@@ -50,12 +57,12 @@ You can follow same procedure in the official  AWS document [Getting started wit
    --node-type t2.small \
     ```
 
-5. To delete the EKS clsuter 
+6. To delete the EKS clsuter 
    ```sh 
    eksctl delete cluster valaxy --region ap-south-1
    ```
    
-6. Validate your cluster using by creating by checking nodes and by creating a pod 
+7. Validate your cluster using by creating by checking nodes and by creating a pod 
    ```sh 
    kubectl get nodes
    kubectl run pod tomcat --image=tomcat 
