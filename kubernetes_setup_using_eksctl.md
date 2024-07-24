@@ -34,13 +34,15 @@ You can follow same procedure in the official  AWS document [Getting started wit
    EC2   
    VPC    
    CloudFormation
-4.attach instance
-  goto ec2 dashbord
-  goto instances
-  select instance
-  goto actions
-  goto security
-  select roles and attach   
+
+   
+3.2.attach instance
+    goto ec2 dashbord
+    goto instances
+    select instance
+    goto actions
+    goto security
+    select roles and attach   
 
 5. Create your cluster and nodes 
    ```sh
